@@ -1,0 +1,112 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.card-form {
+  padding: 1em;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.wrapper h2 {
+  font-size: 1.1rem;
+  margin-bottom: 1.2rem;
+}
+
+input {
+  border: 1px solid #00f2ff;
+  outline: none;
+  padding: 0 0.5rem;
+  width: 300px;
+  height: 40px;
+  border-radius: 5px;
+}
+
+.no-suggestions {
+  color: #999;
+  padding: 0.4rem;
+  font-size: 0.9rem;
+}
+
+.suggestions {
+  border: 1px solid #00f2ff;
+  border-top-width: 0;
+  list-style: none;
+  margin-top: 0;
+  max-height: 250px;
+  overflow-y: auto;
+  padding-left: 0;
+  width: full;
+}
+
+.suggestions::-webkit-scrollbar {
+  width: 0.2rem;
+  height: 0rem;
+  border-radius: 20px;
+}
+
+.suggestions::-webkit-scrollbar-thumb {
+  background-color: #00f2ff;;
+}
+
+.suggestions li {
+  padding: 0.5rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.suggestion-active,
+.suggestions li:hover {
+  background: #00d0ff;
+  color: #fff;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.suggestions li:not(:last-of-type) {
+  border-bottom: 1px solid #999;
+}
